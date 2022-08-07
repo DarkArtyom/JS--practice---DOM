@@ -17,7 +17,7 @@ function onInputForm(event) {
       email,
       password,
     };
-    console.log(`Email: ${formData.email}, password: ${formData.password}`);
+    console.log(formData);
   }
   event.currentTarget.reset();
 }

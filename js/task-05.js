@@ -2,9 +2,9 @@ const enterNameEl = document.querySelector("#name-input");
 const titleEl = document.querySelector("#name-output");
 
 enterNameEl.addEventListener("input", (event) => {
-  event.preventDefault;
-  if (enterNameEl.value === "") {
-    titleEl.textContent = `${titleEl.value}`;
+  if (enterNameEl.value.trim() === "") {
+    titleEl.textContent = "Anonymous";
+  } else {
+    titleEl.textContent = enterNameEl.value.trim();
   }
-  titleEl.textContent = `${enterNameEl.value.trim()}`;
 });

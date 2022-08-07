@@ -10,6 +10,7 @@ function onButtonCreateClick() {
 }
 
 function createBoxes(amount) {
+  destroyBoxes();
   const arrDiv = [];
   const baseSize = 30;
   console.log(amount);
