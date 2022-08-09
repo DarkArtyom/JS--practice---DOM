@@ -23,7 +23,7 @@ const imagesEl = (images) =>
 
     const imgEl = document.createElement("img");
     imgEl.src = image.url;
-    imgEl.textContent = `alt: ${image.alt}`;
+    imgEl.setAttribute = `alt: ${image.alt}`;
     imgEl.style.display = "block";
     imgEl.style.marginBottom = "10px";
 
